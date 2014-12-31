@@ -1,4 +1,4 @@
-general-log2-assets/socketSystem
+socketSystem - item modification system
 ===================
 
 A D2-style weapon/armor system that allows for gems to be placed into sockets on items to alter their abilities.
