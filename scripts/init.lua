@@ -33,25 +33,27 @@ defineObject{
       {
         class = "Party",  
 		onPickUpItem = function(self, item)
+		onPickUpItem = function(self, item)
 		-- General Triggers Below (Skill/Trait triggers, etc)
+			local theGameEffect = item.go.item:getGameEffect()
+			local beforeGE = ""
+			if theGameEffect ~= nil then beforeGE = "\n" end
+			if theGameEffect == nil then theGameEffect = "" end
+			beforeGE = theGameEffect .. beforeGE
 			if item.go.item:hasTrait("shield") and not item.go:getComponent("sockets") then
 				local shieldSockets = math.random(1, 2)
 				item.go:createComponent("Counter", "sockets")
 				item.go.sockets:setValue(shieldSockets)
 				item.go:createComponent("Counter", "gemcount")
 				item.go.gemcount:setValue(shieldSockets)
-				if shieldSockets == 1 then 
-					item.go.item:setGameEffect(tostring(shieldSockets).." free socket.")
-				else
-					item.go.item:setGameEffect(tostring(shieldSockets).." free sockets.")
-				end
+				item.go.item:setGameEffect(beforeGE.."- Free Sockets ("..tostring(item.go.gemcount:getValue()).."/"..tostring(item.go.sockets:getValue())..").")
 			elseif item.go.item:hasTrait("chest_armor") and not item.go:getComponent("sockets") then
 				local chestSockets = math.random(2, 4)
 				item.go:createComponent("Counter", "sockets")
 				item.go.sockets:setValue(chestSockets)
 				item.go:createComponent("Counter", "gemcount")
 				item.go.gemcount:setValue(chestSockets)
-				item.go.item:setGameEffect(tostring(chestSockets).." free sockets.")
+				item.go.item:setGameEffect(beforeGE.."- Free Sockets ("..tostring(item.go.gemcount:getValue()).."/"..tostring(item.go.sockets:getValue())..").")
 			elseif (item.go:getComponent("meleeattack") or item.go:getComponent("rangedattack") or item.go:getComponent("firearmattack")) then
 				if item.go.item:hasTrait("two_handed") then
 					local weaponSockets = math.random(2, 4)
@@ -59,18 +61,14 @@ defineObject{
 					item.go.sockets:setValue(weaponSockets)
 					item.go:createComponent("Counter", "gemcount")
 					item.go.gemcount:setValue(weaponSockets)
-					item.go.item:setGameEffect(tostring(weaponSockets).." free sockets.")
+					item.go.item:setGameEffect(beforeGE.."- Free Sockets ("..tostring(item.go.gemcount:getValue()).."/"..tostring(item.go.sockets:getValue())..").")
 				else
 					local weaponSockets = math.random(1, 2)
 					item.go:createComponent("Counter", "sockets")
 					item.go.sockets:setValue(weaponSockets)
 					item.go:createComponent("Counter", "gemcount")
 					item.go.gemcount:setValue(weaponSockets)
-					if weaponSockets == 1 then 
-					item.go.item:setGameEffect(tostring(weaponSockets).." free socket.")
-				else
-					item.go.item:setGameEffect(tostring(weaponSockets).." free sockets.")
-				end
+					item.go.item:setGameEffect(beforeGE.."- Free Sockets ("..tostring(item.go.gemcount:getValue()).."/"..tostring(item.go.sockets:getValue())..").")
 				end
 			end
 			return

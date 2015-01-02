@@ -50,13 +50,23 @@ defineObject{ name = "base_socket_gem",
 			
 		if not placeGem then hudPrint("The " .. self.go.item:getUiName() .. " does nothing.") return false end
 		if placeGem then
+			local gameEffectFull = itemToEnchant.go.item:getGameEffect()
+			local gameEffectBefore = ""
+			local gameEffectAfter = ""
+			local gameEffectSearch = "Free Sockets"
+			local start = 0
+			local finish = 0
 			itemToEnchant.go.gemcount:decrement()
-			local numberSockets = itemToEnchant.go.gemcount:getValue()
-			if numberSockets == 1 then
-				itemToEnchant.go.item:setGameEffect("1 free socket.")
-			else 
-				itemToEnchant.go.item:setGameEffect(tostring(numberSockets) .. " free sockets.")
-			end
+			local gameEffectReplace = "- Free Sockets ("..tostring(itemToEnchant.go.gemcount:getValue()).."/"..tostring(itemToEnchant.go.sockets:getValue())..")"
+			start, finish = string.find(gameEffectFull, gameEffectSearch)
+			start = start - 2
+			print("s/f: ", start, finish)
+			gameEffectBefore = string.sub(gameEffectFull, 1, start-1)
+			gameEffectAfter = string.sub(gameEffectFull, finish+8)
+			print(gameEffectBefore)
+			print(gameEffectReplace)
+			print(gameEffectAfter)
+			itemToEnchant.go.item:setGameEffect(gameEffectBefore..gameEffectReplace..gameEffectAfter)
 			hudPrint("The " .. self.go.item:getUiName() .. " disappears and enchants the " .. baseUiName .. ".")
 			if gemEffect ~= nil then hudPrint(gemEffect) end
 			return true
