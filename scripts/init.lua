@@ -33,7 +33,6 @@ defineObject{
       {
         class = "Party",  
 		onPickUpItem = function(self, item)
-		onPickUpItem = function(self, item)
 		-- General Triggers Below (Skill/Trait triggers, etc)
 			local theGameEffect = item.go.item:getGameEffect()
 			local beforeGE = ""
