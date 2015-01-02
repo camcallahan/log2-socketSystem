@@ -80,10 +80,6 @@ then the gem will have no effect and remain in hand.
 
 To-do/Fixes needed:
 
-- Find a better way to display the amount of free sockets in items. Currently, an item with a gameEffect 
-will have it erased and replaced with the free socket count. Perhaps a simple gameEffect/description 
-manager needs to be implemented so that -lines- of information can be retrieved/modified without hurting
-other lines of information in the strings.
 - secondaryAction spells have charges that DO work, but are not displayed when hovered over the item. Unsure
 what is causing this.
 - Determine if it is possible to script a sort of setPowerAttackTemplate to dynamically add the predefined 
