@@ -60,12 +60,8 @@ defineObject{ name = "base_socket_gem",
 			local gameEffectReplace = "- Free Sockets ("..tostring(itemToEnchant.go.gemcount:getValue()).."/"..tostring(itemToEnchant.go.sockets:getValue())..")"
 			start, finish = string.find(gameEffectFull, gameEffectSearch)
 			start = start - 2
-			print("s/f: ", start, finish)
 			gameEffectBefore = string.sub(gameEffectFull, 1, start-1)
 			gameEffectAfter = string.sub(gameEffectFull, finish+8)
-			print(gameEffectBefore)
-			print(gameEffectReplace)
-			print(gameEffectAfter)
 			itemToEnchant.go.item:setGameEffect(gameEffectBefore..gameEffectReplace..gameEffectAfter)
 			hudPrint("The " .. self.go.item:getUiName() .. " disappears and enchants the " .. baseUiName .. ".")
 			if gemEffect ~= nil then hudPrint(gemEffect) end
