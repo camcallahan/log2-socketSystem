@@ -52,8 +52,8 @@ defineObject{
 				item.go.sockets:setValue(chestSockets)
 				item.go:createComponent("Counter", "gemcount")
 				item.go.gemcount:setValue(chestSockets)
-				item.go.item:setGameEffect(beforeGE.."- Free Sockets ("..tostring(item.go.gemcount:getValue()).."/"..tostring(item.go.sockets:getValue())..").")
-			elseif (item.go:getComponent("meleeattack") or item.go:getComponent("rangedattack") or item.go:getComponent("firearmattack")) then
+				item.go.item:setGameEffect(beforeGE.."- Free Sockets ("..tostring(item.go.gemcount:getValue()).."/"..tostring(item.go.sockets:getValue())..").") 
+			elseif (item.go:getComponent("meleeattack") or item.go:getComponent("rangedattack") or item.go:getComponent("firearmattack")) and not item.go:getComponent("sockets") then
 				if item.go.item:hasTrait("two_handed") then
 					local weaponSockets = math.random(2, 4)
 					item.go:createComponent("Counter", "sockets")
