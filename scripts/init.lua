@@ -19,7 +19,7 @@ import "mod_assets/scripts/socketSystem/socketBaseItems.lua"
 Alcoves in this pack have not been converted for use. Download LordYig's 
 original LOG1 asset pack here: http://www.nexusmods.com/grimrock/mods/177/
 --]]
-import "mod_assets/scripts/alcoves_and_gems_collection.lua"
+import "mod_assets/scripts/socketSystem/alcoves_and_gems_collection.lua"
 -- Cameron Callahan's SocketSystem Gem Sets
 import "mod_assets/scripts/socketSystem/socketElementGems.lua"
 import "mod_assets/scripts/socketSystem/socketAbilityGems.lua"

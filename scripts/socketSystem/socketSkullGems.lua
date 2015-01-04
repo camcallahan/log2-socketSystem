@@ -306,3 +306,4 @@ defineObject{ name = "socket_skull_strength",
 		},
 	}
 }
+

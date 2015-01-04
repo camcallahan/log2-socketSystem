@@ -26,8 +26,7 @@ defineObject{ name = "socket_gem_accuracy_1",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Adds accuracy to any type of item.
-			]],
+			- Adds accuracy to any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -89,8 +88,7 @@ defineObject{ name = "socket_gem_accuracy_2",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Adds accuracy to any type of item.
-			]],
+			- Adds accuracy to any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -152,8 +150,7 @@ defineObject{ name = "socket_gem_accuracy_3",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Adds accuracy to any type of item.
-			]],
+			- Adds accuracy to any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -215,8 +212,7 @@ defineObject{ name = "socket_gem_evasion_1",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Adds evasion to any type of item.
-			]],
+			- Adds evasion to any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -268,8 +264,7 @@ defineObject{ name = "socket_gem_evasion_2",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Adds evasion to any type of item.
-			]],
+			- Adds evasion to any type of item.]],
 		},
 		{
 		class = "Script",
@@ -316,8 +311,7 @@ defineObject{ name = "socket_gem_evasion_3",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Adds evasion to any type of item.
-			]],
+			- Adds evasion to any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -369,8 +363,7 @@ defineObject{ name = "socket_gem_cooldown_1",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Slightly reduces cooldown of weapons (.3 seconds).
-			]],
+			- Slightly reduces cooldown of weapons (.3 seconds).]],
 		},
 		{
 		class = "Counter",
@@ -422,8 +415,7 @@ defineObject{ name = "socket_gem_cooldown_2",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Slightly reduces cooldown of weapons (.6 seconds).
-			]],
+			- Slightly reduces cooldown of weapons (.6 seconds).]],
 		},
 		{
 		class = "Counter",
@@ -475,8 +467,7 @@ defineObject{ name = "socket_gem_cooldown_3",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Slightly reduces cooldown of weapons (1 second).
-			]],
+			- Slightly reduces cooldown of weapons (1 second).]],
 		},
 		{
 		class = "Counter",
@@ -529,8 +520,7 @@ defineObject{ name = "socket_gem_energy_1",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Increases energy by 10. Fits into any type of item.
-			]],
+			- Increases energy by 10. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -583,8 +573,7 @@ defineObject{ name = "socket_gem_energy_2",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Increases energy by 18. Fits into any type of item.
-			]],
+			- Increases energy by 18. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -637,8 +626,7 @@ defineObject{ name = "socket_gem_energy_3",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Increases energy by 25. Fits into any type of item.
-			]],
+			- Increases energy by 25. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -691,8 +679,7 @@ defineObject{ name = "socket_gem_health_1",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Increases health by 10. Fits into any type of item.
-			]],
+			- Increases health by 10. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -745,8 +732,7 @@ defineObject{ name = "socket_gem_health_2",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Increases health by 18. Fits into any type of item.
-			]],
+			- Increases health by 18. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -799,8 +785,7 @@ defineObject{ name = "socket_gem_health_3",
 			name = "item",
 			description = "An Amethyst.",
 			gameEffect = [[This gem enchants items.
-			- Increases health by 25. Fits into any type of item.
-			]],
+			- Increases health by 25. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -856,8 +841,7 @@ defineObject{ name = "socket_gem_willpower_1",
 			uiName = "Almandine",
 			description = "A deep red-violet garnet.",
 			gameEffect = [[This gem enchants items.
-			- Increases willpower by 1. Fits into any type of item.
-			]],
+			- Increases willpower by 1. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -910,8 +894,7 @@ defineObject{ name = "socket_gem_willpower_2",
 			uiName = "Almandine",
 			description = "A deep red-violet garnet.",
 			gameEffect = [[This gem enchants items.
-			- Increases willpower by 2. Fits into any type of item.
-			]],
+			- Increases willpower by 2. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -964,8 +947,7 @@ defineObject{ name = "socket_gem_vitality_1",
 			uiName = "Almandine",
 			description = "A deep red-violet garnet.",
 			gameEffect = [[This gem enchants items.
-			- Increases vitality by 1. Fits into any type of item.
-			]],
+			- Increases vitality by 1. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -1018,8 +1000,7 @@ defineObject{ name = "socket_gem_vitality_2",
 			uiName = "Almandine",
 			description = "A deep red-violet garnet.",
 			gameEffect = [[This gem enchants items.
-			- Increases vitality by 1. Fits into any type of item.
-			]],
+			- Increases vitality by 1. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -1072,8 +1053,7 @@ defineObject{ name = "socket_gem_dexterity_1",
 			uiName = "Almandine",
 			description = "A deep red-violet garnet.",
 			gameEffect = [[This gem enchants items.
-			- Increases dexterity by 1. Fits into any type of item.
-			]],
+			- Increases dexterity by 1. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -1126,8 +1106,7 @@ defineObject{ name = "socket_gem_dexterity_2",
 			uiName = "Almandine",
 			description = "A deep red-violet garnet.",
 			gameEffect = [[This gem enchants items.
-			- Increases dexterity by 2. Fits into any type of item.
-			]],
+			- Increases dexterity by 2. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -1180,8 +1159,7 @@ defineObject{ name = "socket_gem_strength_1",
 			uiName = "Almandine",
 			description = "A deep red-violet garnet.",
 			gameEffect = [[This gem enchants items.
-			- Increases strength by 1. Fits into any type of item.
-			]],
+			- Increases strength by 1. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -1234,8 +1212,7 @@ defineObject{ name = "socket_gem_strength_2",
 			uiName = "Almandine",
 			description = "A deep red-violet garnet.",
 			gameEffect = [[This gem enchants items.
-			- Increases strength by 2. Fits into any type of item.
-			]],
+			- Increases strength by 2. Fits into any type of item.]],
 		},
 		{
 		class = "Counter",
@@ -1289,8 +1266,7 @@ defineObject{ name = "socket_gem_reach",
 			uiName = "Rhodolite",
 		description = "A deep pink garnet.",
 			gameEffect = [[This gem enchants items.
-			- Allows any melee weapon to attack from the back row.
-			]],
+			- Allows any melee weapon to attack from the back row.]],
 		},
 		{
 		class = "Counter",
